@@ -1,0 +1,134 @@
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 250px;
+    background-color: #000000;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilização da imagem de perfil */
+.sidebar img {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+}
+
+/* Estilização do título da barra lateral */
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: aliceblue;
+}
+
+/* Estilização do parágrafo da barra lateral */
+.sidebar p {
+    text-align: center;
+    font-size: 14px;
+    color: #373636;
+}
+
+/* Estilização da lista de navegação da barra lateral */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilização dos itens da lista de navegação */
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+/* Estilização dos links da lista de navegação */
+.sidebar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Conteúdo principal */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Título principal */
+.main-content h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Container de tarefas */
+.tasks {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Estilização das seções de tarefas (dia e noite) */
+.tasks .day, .tasks .night {
+    width: 45%;
+}
+
+/* Título das seções de tarefas */
+.tasks h2 {
+    text-align: center;
+    background-color: #ea85d4;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Lista de tarefas */
+.tasks ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Itens da lista de tarefas */
+.tasks ul li {
+    background-color: #fe68dd;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Texto da tarefa */
+.tasks ul li span {
+    flex-grow: 1;
+}
+
+/* Botões de edição e remoção */
+.tasks ul li button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+/* Botão para adicionar tarefa */
+.add-button {
+    background-color: #e35dc6;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+}

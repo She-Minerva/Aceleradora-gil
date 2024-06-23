@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <img src="perfil.png" alt="Perfil" width="100">
+            <h2>Perfil</h2>
+            <p>Bem-vindo(a) ao seu espaço pessoal! Aqui você pode compartilhar suas experiências diárias e noturnas. Descreva suas habilidades profissionais, suas atividades durante o dia, como trabalho e estudos, e à noite, suas atividades de lazer, como ler, cozinhar e relaxar.</p>
+            <ul>
+                <li><a href="/sobre">Sobre</a></li>
+                <li><a href="/configuracoes">Configuração</a></li>
+                <li><a href="/ajuda">Ajuda</a></li>
+                <li><a href="/logout">Sair</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <h1>Lista e Tarefas</h1>
+            <div class="tasks">
+                <div class="day">
+                    <h2> Dia 🌤️</h2>
+                    <ul id="day-tasks">
+                        <li><span>Preparar e tomar café da manhã</span> <button onclick="editTask(this)">✏️</button> <button onclick="removeTask(this)">🗑️</button></li>
+                        <li><span>Escovar os dentes e cuidados pessoais</span> <button onclick="editTask(this)">✏️</button> <button onclick="removeTask(this)">🗑️</button></li>
+                        <li><span>Fazer a cama</span> <button onclick="editTask(this)">✏️</button> <button onclick="removeTask(this)">🗑️</button></li>
+                        <li><span>Tomar banho</span> <button onclick="editTask(this)">✏️</button> <button onclick="removeTask(this)">🗑️</button></li>
+                        <li><span>Preparar lancheira ou mochila para o trabalho ou estudo</span> <button onclick="editTask(this)">✏️</button> <button onclick="removeTask(this)">🗑️</button></li>
+                    </ul>
+                    <button class="add-button" onclick="addTask('day-tasks')">Adicionar Tarefa</button>
+                </div>
+                <div class="night">
+                    <h2> Noite 🌠</h2>
+                    <ul id="night-tasks">
+                        <li><span>Tomar banho</span> <button onclick="editTask(this)">✏️</button> <button onclick="removeTask(this)">🗑️</button></li>
+                        <li><span>Assistir a um filme ou série</span> <button onclick="editTask(this)">✏️</button> <button onclick="removeTask(this)">🗑️</button></li>
+                        <li><span>Preparar roupas ou materiais para o dia seguinte</span> <button onclick="editTask(this)">✏️</button> <button onclick="removeTask(this)">🗑️</button></li>
+                        <li><span>Desligar dispositivos eletrônicos</span> <button onclick="editTask(this)">✏️</button> <button onclick="removeTask(this)">🗑️</button></li>
+                        <li><span>Ler um livro</span> <button onclick="editTask(this)">✏️</button> <button onclick="removeTask(this)">🗑️</button></li>
+                    </ul>
+                    <button class="add-button" onclick="addTask('night-tasks')">Adicionar Tarefa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

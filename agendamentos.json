@@ -1,0 +1,11 @@
+[
+  {
+    "paciente": {
+      "nome": "Raquel Moura",
+      "telefone": "71984343801"
+    },
+    "dia": "18/06/2024",
+    "hora": "08:00",
+    "especialidade": "cardiologista"
+  }
+]
